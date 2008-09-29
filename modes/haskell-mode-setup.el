@@ -4,4 +4,6 @@
 (add-to-list 'load-path haskell-mode-root)
 (load (concat haskell-mode-root "/haskell-site-file.el"))
 
-(setq haskell-program-name "ghci")
+(setq haskell-program-name (if (eq system-type 'darwin)
+							   "/opt/local/bin/ghci"
+							 "ghci"))
