@@ -1,4 +1,0 @@
-(provide tramp-config)
-
-(require 'tramp)
-(setq tramp-default-method "rsync")

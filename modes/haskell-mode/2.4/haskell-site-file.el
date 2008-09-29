@@ -1,7 +1,6 @@
 ;;; haskell-site-file.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(provide 'haskell-site-file)
 
 (add-to-list 'load-path
               (or (file-name-directory load-file-name) (car load-path)))
@@ -12,9 +11,9 @@
 ;;;;;;  47169))
 ;;; Generated autoloads from haskell-c.el
 
-(add-to-list (quote auto-mode-alist) (quote ("\\.hsc\\'" . haskell-c-mode)))
+(add-to-list 'auto-mode-alist '("\\.hsc\\'" . haskell-c-mode))
 
-(autoload (quote haskell-c-mode) "haskell-c" "\
+(autoload 'haskell-c-mode "haskell-c" "\
 Major mode for Haskell FFI files.
 
 \(fn)" t nil)
@@ -22,12 +21,12 @@ Major mode for Haskell FFI files.
 ;;;***
 
 ;;;### (autoloads (haskell-cabal-mode) "haskell-cabal" "haskell-cabal.el"
-;;;;;;  (18487 9221))
+;;;;;;  (18231 1867))
 ;;; Generated autoloads from haskell-cabal.el
 
-(add-to-list (quote auto-mode-alist) (quote ("\\.cabal\\'" . haskell-cabal-mode)))
+(add-to-list 'auto-mode-alist '("\\.cabal\\'" . haskell-cabal-mode))
 
-(autoload (quote haskell-cabal-mode) "haskell-cabal" "\
+(autoload 'haskell-cabal-mode "haskell-cabal" "\
 Major mode for Cabal package description files.
 
 \(fn)" t nil)
@@ -38,7 +37,7 @@ Major mode for Cabal package description files.
 ;;;;;;  (18271 24057))
 ;;; Generated autoloads from haskell-decl-scan.el
 
-(autoload (quote haskell-decl-scan-mode) "haskell-decl-scan" "\
+(autoload 'haskell-decl-scan-mode "haskell-decl-scan" "\
 Minor mode for declaration scanning for Haskell mode.
 Top-level declarations are scanned and listed in the menu item \"Declarations\".
 Selecting an item from this menu will take point to the start of the
@@ -88,15 +87,15 @@ Invokes `haskell-decl-scan-mode-hook'.
 ;;;;;;  "haskell-doc.el" (18271 24003))
 ;;; Generated autoloads from haskell-doc.el
 
-(autoload (quote haskell-doc-mode) "haskell-doc" "\
+(autoload 'haskell-doc-mode "haskell-doc" "\
 Enter `haskell-doc-mode' for showing fct types in the echo area.
 See variable docstring.
 
 \(fn &optional ARG)" t nil)
 
-(defalias (quote turn-on-haskell-doc-mode) (quote haskell-doc-mode))
+(defalias 'turn-on-haskell-doc-mode 'haskell-doc-mode)
 
-(autoload (quote haskell-doc-show-type) "haskell-doc" "\
+(autoload 'haskell-doc-show-type "haskell-doc" "\
 Show the type of the function near point.
 For the function under point, show the type in the echo area.
 This information is extracted from the `haskell-doc-prelude-types' alist
@@ -108,10 +107,10 @@ current buffer.
 ;;;***
 
 ;;;### (autoloads (haskell-indent-mode) "haskell-indent" "haskell-indent.el"
-;;;;;;  (18496 6066))
+;;;;;;  (18271 24057))
 ;;; Generated autoloads from haskell-indent.el
 
-(autoload (quote haskell-indent-mode) "haskell-indent" "\
+(autoload 'haskell-indent-mode "haskell-indent" "\
 ``intelligent'' Haskell indentation mode that deals with
 the layout rule of Haskell.  \\[haskell-indent-cycle] starts the cycle
 which proposes new possibilities as long as the TAB key is pressed.
@@ -132,31 +131,23 @@ these functions also align the guards and rhs of the current definition
     \\[haskell-indent-put-region-in-literate]
       makes the region a piece of literate code in a literate script
 
+Note: \\[indent-region] which applies \\[haskell-indent-cycle] for each line
+of the region also works but it stops and asks for any line having more
+than one possible indentation.
+Use TAB to cycle until the right indentation is found and then RET to go the
+next line to indent.
+
 Invokes `haskell-indent-hook' if not nil.
 
 \(fn &optional ARG)" t nil)
 
 ;;;***
 
-;;;### (autoloads (haskell-indentation-mode) "haskell-indentation"
-;;;;;;  "haskell-indentation.el" (18375 16073))
-;;; Generated autoloads from haskell-indentation.el
-
-(autoload (quote haskell-indentation-mode) "haskell-indentation" "\
-Haskell indentation mode that deals with the layout rule.
-It rebinds RET, DEL and BACKSPACE, so that indentations can be
-set and deleted as if they were real tabs.  It supports
-autofill-mode.
-
-\(fn &optional ARG)" t nil)
-
-;;;***
-
 ;;;### (autoloads (haskell-hoogle literate-haskell-mode haskell-mode)
-;;;;;;  "haskell-mode" "haskell-mode.el" (18375 13416))
+;;;;;;  "haskell-mode" "haskell-mode.el" (18271 25098))
 ;;; Generated autoloads from haskell-mode.el
 
-(autoload (quote haskell-mode) "haskell-mode" "\
+(autoload 'haskell-mode "haskell-mode" "\
 Major mode for editing Haskell programs.
 Blank lines separate paragraphs, comments start with `-- '.
 \\<haskell-mode-map>
@@ -191,7 +182,7 @@ Invokes `haskell-mode-hook'.
 
 \(fn)" t nil)
 
-(autoload (quote literate-haskell-mode) "haskell-mode" "\
+(autoload 'literate-haskell-mode "haskell-mode" "\
 As `haskell-mode' but for literate scripts.
 
 \(fn)" t nil)
@@ -200,7 +191,7 @@ As `haskell-mode' but for literate scripts.
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 
-(autoload (quote haskell-hoogle) "haskell-mode" "\
+(autoload 'haskell-hoogle "haskell-mode" "\
 Do a Hoogle search for QUERY.
 
 \(fn QUERY)" t nil)
@@ -209,24 +200,24 @@ Do a Hoogle search for QUERY.
 
 ;;;### (autoloads (inferior-haskell-find-haddock inferior-haskell-find-definition
 ;;;;;;  inferior-haskell-info inferior-haskell-type inferior-haskell-load-file
-;;;;;;  switch-to-haskell) "inf-haskell" "inf-haskell.el" (18541
-;;;;;;  43266))
+;;;;;;  switch-to-haskell) "inf-haskell" "inf-haskell.el" (18231
+;;;;;;  1814))
 ;;; Generated autoloads from inf-haskell.el
 
-(defalias (quote run-haskell) (quote switch-to-haskell))
+(defalias 'run-haskell 'switch-to-haskell)
 
-(autoload (quote switch-to-haskell) "inf-haskell" "\
+(autoload 'switch-to-haskell "inf-haskell" "\
 Show the inferior-haskell buffer.  Start the process if needed.
 
 \(fn &optional ARG)" t nil)
 
-(autoload (quote inferior-haskell-load-file) "inf-haskell" "\
+(autoload 'inferior-haskell-load-file "inf-haskell" "\
 Pass the current buffer's file to the inferior haskell process.
 If prefix arg \\[universal-argument] is given, just reload the previous file.
 
 \(fn &optional RELOAD)" t nil)
 
-(autoload (quote inferior-haskell-type) "inf-haskell" "\
+(autoload 'inferior-haskell-type "inf-haskell" "\
 Query the haskell process for the type of the given expression.
 If optional argument `insert-value' is non-nil, insert the type above point
 in the buffer.  This can be done interactively with the \\[universal-argument] prefix.
@@ -234,17 +225,17 @@ The returned info is cached for reuse by `haskell-doc-mode'.
 
 \(fn EXPR &optional INSERT-VALUE)" t nil)
 
-(autoload (quote inferior-haskell-info) "inf-haskell" "\
+(autoload 'inferior-haskell-info "inf-haskell" "\
 Query the haskell process for the info of the given expression.
 
 \(fn SYM)" t nil)
 
-(autoload (quote inferior-haskell-find-definition) "inf-haskell" "\
+(autoload 'inferior-haskell-find-definition "inf-haskell" "\
 Attempt to locate and jump to the definition of the given expression.
 
 \(fn SYM)" t nil)
 
-(autoload (quote inferior-haskell-find-haddock) "inf-haskell" "\
+(autoload 'inferior-haskell-find-haddock "inf-haskell" "\
 Find and open the Haddock documentation of SYM.
 Make sure to load the file into GHCi or Hugs first by using C-c C-l.
 Only works for functions in a package installed with ghc-pkg, or
@@ -264,8 +255,8 @@ we load it.
 ;;;***
 
 ;;;### (autoloads nil nil ("haskell-font-lock.el" "haskell-ghci.el"
-;;;;;;  "haskell-hugs.el" "haskell-simple-indent.el") (18573 21089
-;;;;;;  391446))
+;;;;;;  "haskell-hugs.el" "haskell-simple-indent.el") (18271 25750
+;;;;;;  579943))
 
 ;;;***
 

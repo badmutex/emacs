@@ -1,3 +1,0 @@
-#02FFFFFF678DB2FFFFFF0
-# Fix for KDE's "apply colors to non-KDE apps" setting
-style "QtCTxtFix" {fg[ACTIVE]="#FFFFFF" fg[PRELIGHT]="#FFFFFF"}class "*MenuItem" style "QtCTxtFix" widget_class "*.*ProgressBar" style "QtCTxtFix"

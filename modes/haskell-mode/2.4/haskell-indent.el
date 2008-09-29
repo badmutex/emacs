@@ -1,6 +1,6 @@
 ;;; haskell-indent.el --- "semi-intelligent" indentation module for Haskell Mode
 
-;; Copyright 2004, 2005, 2007, 2008  Free Software Foundation, Inc.
+;; Copyright 2004, 2005, 2007  Free Software Foundation, Inc.
 ;; Copyright 1997-1998  Guy Lapalme
 
 ;; Author: 1997-1998 Guy Lapalme <lapalme@iro.umontreal.ca>
@@ -433,11 +433,6 @@ Returns the location of the start of the comment, nil otherwise."
        (forward-sexp 1)
        (haskell-indent-skip-blanks-and-newlines-forward end))))
 
-(defun haskell-indent-next-symbol-safe (end)
-  "Puts point to the next following symbol, or to end if there are no more symbols in the sexp."
-  (condition-case errlist (haskell-indent-next-symbol end)
-      (error (goto-char end))))
-
 (defun haskell-indent-separate-valdef (start end)
   "Returns a list of positions for important parts of a valdef."
   (save-excursion
@@ -457,13 +452,13 @@ Returns the location of the start of the comment, nil otherwise."
                   (goto-char (match-end 0)))
               (skip-chars-forward " \t" end)
               (setq valname (point))    ; type = other
-              (haskell-indent-next-symbol-safe end))
+              (haskell-indent-next-symbol end))
             (while (and (< (point) end)
                         (setq type (haskell-indent-type-at-point))
                         (or (memq type '(ident other))))
               (if (null aft-valname)
                   (setq aft-valname (point)))
-              (haskell-indent-next-symbol-safe end))))
+              (haskell-indent-next-symbol end))))
       (if (and (< (point) end) (eq type 'guard)) ; start of a guard
           (progn
             (setq guard (match-beginning 0))
@@ -473,7 +468,7 @@ Returns the location of the start of the comment, nil otherwise."
                         (not (eq type 'rhs)))
               (if (null aft-guard)
                   (setq aft-guard (point)))
-              (haskell-indent-next-symbol-safe end))))
+              (haskell-indent-next-symbol end))))
       (if (and (< (point) end) (eq type 'rhs)) ; start of a rhs
           (progn
             (setq rhs-sign (match-beginning 0))
@@ -1276,9 +1271,6 @@ We stay in the cycle as long as the TAB key is pressed."
 	(if marker
 	    (goto-char (marker-position marker)))))))
 
-(defun haskell-indent-region (start end)
-  (error "Auto-reindentation of a region is not supported"))
-
 ;;; alignment functions
 
 (defun haskell-indent-shift-columns (dest-column region-stack)
@@ -1484,8 +1476,7 @@ in the current buffer.")
     (define-key map [?\C-c ?\C-=] 'haskell-indent-insert-equal)
     (define-key map [?\C-c ?\C-|] 'haskell-indent-insert-guard)
     ;; Alternate binding, in case C-c C-| is too inconvenient to type.
-    ;; Duh, C-g is a special key, let's not use it here.
-    ;; (define-key map [?\C-c ?\C-g] 'haskell-indent-insert-guard)
+    (define-key map [?\C-c ?\C-g] 'haskell-indent-insert-guard)
     (define-key map [?\C-c ?\C-o] 'haskell-indent-insert-otherwise)
     (define-key map [?\C-c ?\C-w] 'haskell-indent-insert-where)
     (define-key map [?\C-c ?\C-.] 'haskell-indent-align-guards-and-rhs)
@@ -1495,7 +1486,6 @@ in the current buffer.")
 (defun turn-on-haskell-indent ()
   "Turn on ``intelligent'' haskell indentation mode."
   (set (make-local-variable 'indent-line-function) 'haskell-indent-cycle)
-  (set (make-local-variable 'indent-region-function) 'haskell-indent-region)
   (setq haskell-indent-mode t)
   ;; Activate our keymap.
   (let ((map (current-local-map)))
@@ -1556,6 +1546,12 @@ these functions also align the guards and rhs of the current definition
       aligns the guards and rhs of the region
     \\[haskell-indent-put-region-in-literate]
       makes the region a piece of literate code in a literate script
+
+Note: \\[indent-region] which applies \\[haskell-indent-cycle] for each line
+of the region also works but it stops and asks for any line having more
+than one possible indentation.
+Use TAB to cycle until the right indentation is found and then RET to go the
+next line to indent.
 
 Invokes `haskell-indent-hook' if not nil."
   (interactive "P")

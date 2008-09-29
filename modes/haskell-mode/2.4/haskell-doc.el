@@ -127,7 +127,7 @@
 
 ;;; Changelog:
 ;;  ==========
-;;  $Log: haskell-doc.el,v $
+;;  haskell-doc.el,v
 ;;  Revision 1.29  2007-12-12 04:04:19  monnier
 ;;  (haskell-doc-in-code-p): New function.
 ;;  (haskell-doc-show-type): Use it.
