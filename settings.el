@@ -6,9 +6,9 @@
 (setq default-tab-width 4)
 (mouse-wheel-mode t)
 (global-hl-line-mode 1)
-(line-number-mode t)
 (delete-selection-mode t)
-
+(line-number-mode t)
+(column-number-mode t)
 
 ;;;; use versioned backups, node clobber symlinks, and don't litter fs tree
 (setq
