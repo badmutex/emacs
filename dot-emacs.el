@@ -4,3 +4,4 @@
 
 (require 'haskell-mode-setup)
 (require 'keybindings)
+(require 'settings)
