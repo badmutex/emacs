@@ -6,7 +6,6 @@
 
 ;;;; grab the relevent programming modes
 (require 'haskell-mode-setup)
-(require 'auctex-setup)
 
 (require 'keybindings)
 (require 'settings)
