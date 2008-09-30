@@ -9,3 +9,6 @@
 
 (require 'keybindings)
 (require 'settings)
+
+;;;; version control setup(s)
+(require 'git-setup)
