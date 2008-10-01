@@ -1,5 +1,11 @@
 (provide 'settings)
 
+;;;; remove toolbars
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+(mouse-wheel-mode 1)
+
 ;;;; editor options
 (fset 'yes-or-no-p 'y-or-n-p)
 
