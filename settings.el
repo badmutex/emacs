@@ -9,6 +9,7 @@
 (delete-selection-mode t)
 (line-number-mode t)
 (column-number-mode t)
+(show-paren-mode t)
 
 ;;;; use versioned backups, node clobber symlinks, and don't litter fs tree
 (setq
