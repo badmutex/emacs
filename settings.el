@@ -1,5 +1,8 @@
 (provide 'settings)
 
+;;;; start the server on startup
+(server-start)
+
 ;;;; remove toolbars
 (tool-bar-mode -1)
 (menu-bar-mode -1)
