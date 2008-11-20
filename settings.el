@@ -37,3 +37,8 @@
 ;;;; setup tramp for remote editing
 (require 'tramp)
 (setq tramp-default-method "rsync")
+
+;;;; adjust the window size on startup
+(set-frame-position (selected-frame) 0 0)
+(set-frame-width (selected-frame) 80)
+(set-frame-height (selected-frame) 120)
