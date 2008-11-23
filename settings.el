@@ -1,7 +1,9 @@
 (provide 'settings)
 
-;;;; start the server on startup
+;;;; startup options
 (server-start)
+(setq inhibit-startup-screen t)
+(setq initial-scratch-message nil)
 
 ;;;; remove toolbars
 (tool-bar-mode -1)
@@ -42,3 +44,7 @@
 (set-frame-position (selected-frame) 0 0)
 (set-frame-width (selected-frame) 80)
 (set-frame-height (selected-frame) 120)
+
+;;;; allow changing cases of regions
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
