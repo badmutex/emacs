@@ -2,7 +2,7 @@
 
 (add-hook 'LaTeX-mode-hook 'flyspell-mode)
 (add-hook 'LaTeX-mode-hook 'TeX-PDF-mode)
-(add-hook 'LaTeX-mode-hook 'longlines-mode)
+(add-hook 'LaTeX-mode-hook 'auto-fill-mode) ; 'longlines-mode)
 (setq longlines-show-hard-newlines t)
 (setq longlines-wrap-follows-window-size t)
 
