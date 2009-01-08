@@ -1,1 +1,3 @@
 saves/*
+.DS_Store
+.cvsignore
