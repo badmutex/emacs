@@ -40,11 +40,6 @@
 (require 'tramp)
 (setq tramp-default-method "rsync")
 
-;;;; adjust the window size on startup
-(set-frame-position (selected-frame) 0 0)
-(set-frame-width (selected-frame) 80)
-(set-frame-height (selected-frame) 120)
-
 ;;;; allow changing cases of regions
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
