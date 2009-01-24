@@ -1,23 +1,17 @@
 (provide 'clojure-setup)
 
-(setq inferior-lisp-program
-      (let* ((java-path "java")
-	     (java-options "")
-	     (home (if (eq system-type 'darwin) "/Users/badi/"
-				 (if (eq system-type 'gnu/linux) "/home/badi/"
-				   (if (eq system-type 'windows-nt) "/Users/badi/"))))
-	     (clojure-path (concat home "emacs/modes/clojure/"))
-	     (class-path-delimiter ";")
-	     (class-path (mapconcat (lambda (s) s)
-				    (list (concat clojure-path "clojure.jar"))
-				    class-path-delimiter)))
-	(concat java-path
-		" " java-options
-		" -cp " class-path
-		" clojure.lang.Repl")))
-
-(setq load-path (cons "~/emacs/modes/clojure/clojure-mode" load-path))
+(add-to-list 'load-path "~/emacs/modes/clojure/clojure-mode")
 (require 'clojure-mode)
+
+(add-to-list 'load-path "~emacs/modes/slime")
+(require 'slime)
+(slime-setup)
+
+(setq swank-clojure-jar-path "~/emacs/modes/clojure/clojure.jar")
+(add-to-list 'load-path "~/emacs/modes/clojure/swank-clojure")
+(require 'swank-clojure-autoload)
+
+
 (setq auto-mode-alist
       (cons '("\\.clj$" . clojure-mode)
 	    auto-mode-alist))
