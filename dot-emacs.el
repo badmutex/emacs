@@ -9,7 +9,7 @@
 (require 'latex-setup)
 (require 'git-setup)
 (require 'clojure-setup)
-;(require 'slime-setup)
+(require 'slime-setup)
 
 (require 'keybindings)
 (require 'settings)

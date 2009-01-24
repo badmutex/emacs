@@ -1,6 +1,6 @@
 (provide 'git-setup)
 
-(add-to-list 'load-path "~/emacs/modes/git")
+(add-to-list 'load-path (concat emacs-root "/modes/git"))
 
 (require 'vc-git)
 (when (featurep 'vc-git) (add-to-list 'vc-handled-backends 'git))
