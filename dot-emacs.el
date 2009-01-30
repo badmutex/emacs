@@ -10,6 +10,7 @@
 (require 'git-setup)
 (require 'clojure-setup)
 (require 'slime-setup)
+(require 'elisp-setup)
 
 (require 'keybindings)
 (require 'settings)
