@@ -15,3 +15,7 @@
 (add-hook 'clojure-mode-hook
 	  '(lambda ()
 	     (define-key clojure-mode-map "\C-c\C-e" 'lisp-eval-last-sexp)))
+
+(setq
+ swank-clojure-extra-classpaths
+ (list "/home/badi/.clojure"))
