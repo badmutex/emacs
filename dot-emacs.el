@@ -12,6 +12,7 @@
 (require 'slime-setup)
 (require 'elisp-setup)
 (require 'yasnippet-setup)
+(require 'scala-setup)
 
 (require 'keybindings)
 (require 'settings)
