@@ -11,6 +11,7 @@
 (require 'clojure-setup)
 (require 'slime-setup)
 (require 'elisp-setup)
+(require 'yasnippet-setup)
 
 (require 'keybindings)
 (require 'settings)
