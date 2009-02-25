@@ -1,7 +1,7 @@
 (provide 'settings)
 
 ;;;; startup options
-(server-start)
+;; (server-start)
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil)
 

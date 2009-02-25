@@ -11,6 +11,8 @@
 (require 'clojure-setup)
 (require 'slime-setup)
 (require 'elisp-setup)
+(provide 'yasnippet-setup)
+(provide 'scala-setup)
 
 (require 'keybindings)
 (require 'settings)
