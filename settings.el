@@ -20,7 +20,7 @@
 (autoload 'flyspell-mode "flyspell" "On-the-fly spelling checker." t)
 
 (mouse-wheel-mode t)
-;(global-hl-line-mode 1)
+(global-hl-line-mode 1)
 (delete-selection-mode t)
 (line-number-mode t)
 (column-number-mode t)
