@@ -13,6 +13,7 @@
 (require 'elisp-setup)
 (provide 'yasnippet-setup)
 (provide 'scala-setup)
+(provide 'fsharp-setup)
 
 (require 'keybindings)
 (require 'settings)
