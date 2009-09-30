@@ -37,8 +37,8 @@
  version-control 5)
 
 ;;;; setup tramp for remote editing
-(require 'tramp)
-(setq tramp-default-method "rsync")
+;; (require 'tramp)
+;; (setq tramp-default-method "rsync")
 
 ;;;; allow changing cases of regions
 (put 'downcase-region 'disabled nil)

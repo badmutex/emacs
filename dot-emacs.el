@@ -17,3 +17,5 @@
 
 (require 'keybindings)
 (require 'settings)
+
+(require 'my-stuff)
