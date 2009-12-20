@@ -7,17 +7,18 @@
 
 ;;;; remove toolbars
 (tool-bar-mode -1)
-(menu-bar-mode 1)
+(menu-bar-mode -1)
 (scroll-bar-mode 1)
 (mouse-wheel-mode 1)
 
 ;;;; editor options
 (fset 'yes-or-no-p 'y-or-n-p)
-
+(global-linum-mode t)
 (setq x-select-enable-clipboard t)
 (setq default-tab-width 4)
 (setq flyspell-sort-corrections nil)
 (autoload 'flyspell-mode "flyspell" "On-the-fly spelling checker." t)
+(set-face-foreground 'minibuffer-prompt "green")
 
 (mouse-wheel-mode t)
 ;(global-hl-line-mode 1)
