@@ -1,3 +1,4 @@
 saves/*
 .DS_Store
 .cvsignore
+*.elc
