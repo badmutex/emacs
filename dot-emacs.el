@@ -5,6 +5,8 @@
 (add-to-list 'load-path (concat emacs-root "/modes"))
 
 ;;;; grab some usefull modes
+(require 'elpa)
+
 (require 'haskell-mode-setup)
 (require 'latex-setup)
 (require 'git-setup)
