@@ -29,11 +29,11 @@
   (search-forward "Grade:")
   (insert " "))
 
-(defun grade-prog3 (uname)
+(defun grade-prog4 (uname)
   (interactive "Busername")
-  (open-record uname "prog3"))
-  ;; (add-grader uname "prog3" *badi*)
-  ;; (add-points uname "prog3"))
+  (open-record uname "prog4")
+  (add-grader uname "prog4" *badi*)
+  (add-points uname "prog4"))
 
 
   
