@@ -2,3 +2,6 @@ saves/*
 .DS_Store
 .cvsignore
 *.elc
+dot-emacs-dot-d/auto-save-list
+dot-emacs-dot-d/elpa/archive-contents
+dot-emacs-dot-d/elpa/builtin-packages
