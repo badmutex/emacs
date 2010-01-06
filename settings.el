@@ -11,6 +11,9 @@
 ;; (mouse-wheel-mode 1)
 
 ;;;; editor options
+(require 'ido)
+(ido-mode t)
+
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (setq x-select-enable-clipboard t)
@@ -25,7 +28,6 @@
 (line-number-mode t)
 (column-number-mode t)
 (show-paren-mode t)
-(icy-mode 1)
 
 ;;;; use versioned backups, node clobber symlinks, and don't litter fs tree
 (setq
