@@ -16,7 +16,6 @@
 (provide 'scala-setup)
 (provide 'fsharp-setup)
 
-;; (require 'icicles-setup)
 (require 'keybindings)
 (require 'settings)
 
