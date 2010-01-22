@@ -1,5 +1,7 @@
 (provide 'settings)
 
+(require 'org-mode-setup)
+
 ;;;; startup options
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil)
