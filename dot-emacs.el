@@ -4,18 +4,18 @@
 (add-to-list 'load-path emacs-root)
 (add-to-list 'load-path (concat emacs-root "/modes"))
 
+;;;; package manager
+(require 'elpa)
+
 ;;;; grab some usefull modes
 (require 'haskell-mode-setup)
 (require 'latex-setup)
 (require 'git-setup)
-(require 'clojure-setup)
-(require 'slime-setup)
 (require 'elisp-setup)
 (provide 'yasnippet-setup)
 (provide 'scala-setup)
 (provide 'fsharp-setup)
 
-(require 'icicles-setup)
 (require 'keybindings)
 (require 'settings)
 
