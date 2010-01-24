@@ -9,6 +9,7 @@
 
 ;;;; grab some usefull modes
 (require 'haskell-mode-setup)
+(require 'auctex-setup)
 (require 'latex-setup)
 (require 'git-setup)
 (require 'elisp-setup)
