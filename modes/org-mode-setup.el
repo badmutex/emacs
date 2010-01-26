@@ -19,6 +19,8 @@
 
 (setq org-log-done t)
 
+(setq org-hide-leading-stars t)
+
 
 
 (provide 'org-mode-setup)
