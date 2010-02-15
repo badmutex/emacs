@@ -22,7 +22,6 @@
 (autoload 'flyspell-mode "flyspell" "On-the-fly spelling checker." t)
 (set-face-foreground 'minibuffer-prompt "green")
 
-(mouse-wheel-mode t)
 (delete-selection-mode t)
 (line-number-mode t)
 (column-number-mode t)
