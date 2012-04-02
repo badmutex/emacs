@@ -1,6 +1,4 @@
 (provide 'keybindings)
 
-(global-set-key "\C-x/" 'comment-region)
-(global-set-key "\C-x?" 'uncomment-region)
-(global-set-key "\C-c=" 'align-regexp)
-(global-set-key "\C-cb" 'eval-buffer)
+;; (global-set-key (kdb "C-c =") 'haskell-indent-insert-equal)
+;; (global-set-key (kbd "C-c b") 'eval-buffer)

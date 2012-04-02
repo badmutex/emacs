@@ -13,11 +13,11 @@
 (require 'latex-setup)
 (require 'git-setup)
 (require 'elisp-setup)
-(require 'php-setup)
+;; (require 'php-setup)
 
-(provide 'yasnippet-setup)
-(provide 'scala-setup)
-(provide 'fsharp-setup)
+;; (provide 'yasnippet-setup)
+;; (provide 'scala-setup)
+;; (provide 'fsharp-setup)
 
 
 (require 'keybindings)
