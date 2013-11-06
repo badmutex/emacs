@@ -1,5 +1,8 @@
 
 
+(defvar emacs-root "~/emacs")
+(add-to-list 'load-path emacs-root)
+
 ;;;; startup options
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil)
@@ -31,3 +34,8 @@
 ;;;; allow changing cases of regions
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
+
+
+
+;;;; mode hooks
+(require 'modes-setup)
