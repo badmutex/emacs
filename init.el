@@ -7,6 +7,9 @@
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil)
 
+;;;; assume themse are installed vial elpa/marmalade
+(add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/zenburn-theme-2.1/")
+(load-theme 'zenburn t)
 
 ;;;; remove toolbars
 (menu-bar-mode -1)
