@@ -39,3 +39,6 @@
 
 ;;;; mode hooks
 (require 'modes-setup)
+
+;;;; package repos
+(require 'packages-setup)
