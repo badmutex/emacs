@@ -44,7 +44,10 @@
 
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Nix Mode
+(defvar nixmode-root (concat emacs-root "/modes/nix-mode/"))
+(add-to-list 'load-path nixmode-root)
+(require 'nix-mode)
 
 
 
