@@ -1,6 +1,8 @@
 
+(defvar modes-root (concat emacs-root "/modes/"))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Haskell mode
-(defvar haskell-root (concat emacs-root "/modes/haskell-mode.git/"))
+(defvar haskell-root (concat modes-root "/haskell-mode.git/"))
 (add-to-list 'load-path haskell-root)
 (require 'haskell-mode-autoloads)
 (add-to-list 'Info-default-directory-list haskell-root)
@@ -45,7 +47,7 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Nix Mode
-(defvar nixmode-root (concat emacs-root "/modes/nix-mode/"))
+(defvar nixmode-root (concat modes-root "/nix-mode/"))
 (add-to-list 'load-path nixmode-root)
 (require 'nix-mode)
 
@@ -53,7 +55,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Centered Cursor
 (when window-system ; else void symbol error when running from terminal
-  (defvar centered-cursor-mode-root (concat emacs-root "/modes/centered-cursor-mode/"))
+  (defvar centered-cursor-mode-root (concat modes-root "/centered-cursor-mode/"))
   (add-to-list 'load-path centered-cursor-mode-root)
   (require 'centered-cursor-mode))
 
