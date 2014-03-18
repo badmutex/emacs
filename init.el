@@ -22,6 +22,7 @@
 (line-number-mode t)
 (column-number-mode t)
 (global-linum-mode t)
+; highligh the current light
 (global-hl-line-mode t)
 (set-face-background hl-line-face "grey10")
 (set-face-foreground 'highlight nil)
