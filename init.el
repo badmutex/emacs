@@ -11,7 +11,7 @@
 ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/zenburn-theme-2.1/")
 (load-theme 'misterioso t)
 
-;;;; remove toolbars
+;;;; remove menu- and tool-bars
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
@@ -22,7 +22,6 @@
 (column-number-mode t)
 ; highlight matching parens
 (show-paren-mode t)
-
 
 ;;;; use versioned backups, don't clobber symlinks, and don't litter fs tree
 (setq
