@@ -13,7 +13,8 @@
 
 ;;;; remove menu- and tool-bars
 (menu-bar-mode -1)
-(tool-bar-mode -1)
+(when window-system
+  (tool-bar-mode -1))
 
 
 ;;;; misc. UI settings
@@ -49,7 +50,8 @@
 (require 'modes-setup)
 
 ;;; centered cursor
-(global-centered-cursor-mode +1)
+(when window-system
+  (global-centered-cursor-mode +1))
 
 
 ;;;; package repos
