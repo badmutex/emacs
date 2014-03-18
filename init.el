@@ -43,5 +43,9 @@
 ;;;; mode hooks
 (require 'modes-setup)
 
+;;; centered cursor
+(global-centered-cursor-mode +1)
+
+
 ;;;; package repos
 (require 'packages-setup)

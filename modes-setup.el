@@ -51,6 +51,10 @@
 
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Centered Cursor
+(defvar centered-cursor-mode-root (concat emacs-root "/modes/centered-cursor-mode/"))
+(add-to-list 'load-path centered-cursor-mode-root)
+(require 'centered-cursor-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)
