@@ -21,6 +21,10 @@
 (line-number-mode t)
 (column-number-mode t)
 (global-linum-mode t)
+(global-hl-line-mode t)
+(set-face-background hl-line-face "grey10")
+(set-face-foreground 'highlight nil)
+
 ; highlight matching parens
 (show-paren-mode t)
 
