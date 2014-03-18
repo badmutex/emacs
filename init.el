@@ -20,6 +20,7 @@
 ; show the current line and column numbers
 (line-number-mode t)
 (column-number-mode t)
+(global-linum-mode t)
 ; highlight matching parens
 (show-paren-mode t)
 
