@@ -59,5 +59,12 @@
   (add-to-list 'load-path centered-cursor-mode-root)
   (require 'centered-cursor-mode))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; CMake
+(defvar cmake-mode-root (concat modes-root "/cmake-mode/"))
+(add-to-list 'load-path cmake-mode-root)
+(require 'cmake-mode)
+(require 'andersl-cmake-font-lock)
+(add-hook 'cmake-mode-hook 'andersl-cmake-font-lock-activate)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)
