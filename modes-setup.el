@@ -66,5 +66,11 @@
 (require 'andersl-cmake-font-lock)
 (add-hook 'cmake-mode-hook 'andersl-cmake-font-lock-activate)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; YAML
+(add-to-list 'load-path (concat modes-root "/yaml-mode.git/"))
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)

@@ -1,3 +1,6 @@
 [submodule "modes/haskell-mode.git"]
 	path = modes/haskell-mode.git
 	url = https://github.com/haskell/haskell-mode.git
+[submodule "modes/yaml-mode.git"]
+	path = modes/yaml-mode.git
+	url = git@github.com:yoshiki/yaml-mode.git
