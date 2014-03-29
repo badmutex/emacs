@@ -34,3 +34,6 @@
 [submodule "modes/deferred.git"]
 	path = modes/deferred.git
 	url = git@github.com:kiwanami/emacs-deferred.git
+[submodule "modes/ctable.git"]
+	path = modes/ctable.git
+	url = git@github.com:kiwanami/emacs-ctable.git
