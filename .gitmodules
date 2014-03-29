@@ -4,3 +4,6 @@
 [submodule "modes/yaml-mode.git"]
 	path = modes/yaml-mode.git
 	url = git@github.com:yoshiki/yaml-mode.git
+[submodule "modes/magit.git"]
+	path = modes/magit.git
+	url = git@github.com:magit/magit.git
