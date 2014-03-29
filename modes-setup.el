@@ -116,6 +116,14 @@
 
 (setq yas-prompt-functions '(yas-popup-isearch-prompt yas-no-prompt))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; s (string manipulation library)
+(add-to-list 'load-path (concat modes-root "/s.git/"))
+(require 's)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; flycheck
+(add-to-list 'load-path (concat modes-root "/flycheck.git/"))
+(require 'flycheck)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)

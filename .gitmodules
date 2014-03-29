@@ -19,3 +19,9 @@
 [submodule "modes/yasnippet.git"]
 	path = modes/yasnippet.git
 	url = git@github.com:capitaomorte/yasnippet.git
+[submodule "modes/flycheck.git"]
+	path = modes/flycheck.git
+	url = git@github.com:flycheck/flycheck.git
+[submodule "modes/s.git"]
+	path = modes/s.git
+	url = git@github.com:magnars/s.el.git
