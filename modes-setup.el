@@ -139,6 +139,10 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; epc
 (add-to-list 'load-path (concat modes-root "/epc.git/"))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; python-environment
+(add-to-list 'load-path (concat modes-root "/python-environment.git//"))
+(require 'python-environment)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; jedi
 (add-to-list 'load-path (concat modes-root "/jedi.git/"))
 (require 'jedi)

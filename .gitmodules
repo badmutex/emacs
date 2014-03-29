@@ -43,3 +43,6 @@
 [submodule "modes/jedi.git"]
 	path = modes/jedi.git
 	url = git@github.com:tkf/emacs-jedi.git
+[submodule "modes/python-environment.git"]
+	path = modes/python-environment.git
+	url = git@github.com:tkf/emacs-python-environment.git
