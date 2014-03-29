@@ -76,5 +76,9 @@
 (add-to-list 'load-path (concat modes-root "/magit.git/"))
 (require 'magit)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; popup
+(add-to-list 'load-path (concat modes-root "/popup.git/"))
+(require 'popup)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)

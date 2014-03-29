@@ -7,3 +7,6 @@
 [submodule "modes/magit.git"]
 	path = modes/magit.git
 	url = git@github.com:magit/magit.git
+[submodule "modes/popup.git"]
+	path = modes/popup.git
+	url = git@github.com:auto-complete/popup-el.git
