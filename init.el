@@ -60,3 +60,6 @@
 
 ; autopair braces, quotes
 (autopair-global-mode)
+
+; yasnippet mode
+(yas-global-mode 1)

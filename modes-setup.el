@@ -88,5 +88,9 @@
 (add-to-list 'load-path (concat modes-root "/autopair.git/"))
 (require 'autopair)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; yasnippet
+(add-to-list 'load-path (concat modes-root "/yasnippet.git/"))
+(require 'yasnippet)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)

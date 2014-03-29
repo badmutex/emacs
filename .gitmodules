@@ -16,3 +16,6 @@
 [submodule "modes/autopair.git"]
 	path = modes/autopair.git
 	url = git@github.com:capitaomorte/autopair.git
+[submodule "modes/yasnippet.git"]
+	path = modes/yasnippet.git
+	url = git@github.com:capitaomorte/yasnippet.git
