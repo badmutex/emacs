@@ -37,3 +37,9 @@
 [submodule "modes/ctable.git"]
 	path = modes/ctable.git
 	url = git@github.com:kiwanami/emacs-ctable.git
+[submodule "modes/epc.git"]
+	path = modes/epc.git
+	url = git@github.com:kiwanami/emacs-epc.git
+[submodule "modes/jedi.git"]
+	path = modes/jedi.git
+	url = git@github.com:tkf/emacs-jedi.git
