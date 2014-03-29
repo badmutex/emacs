@@ -11,8 +11,9 @@
 ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/zenburn-theme-2.1/")
 (load-theme 'misterioso t)
 
-;;;; remove menu- and tool-bars
-(menu-bar-mode -1)
+;;;; remove menu- and tool-bars if needed
+(unless window-system
+  (menu-bar-mode -1))
 (when window-system
   (tool-bar-mode -1))
 
