@@ -120,6 +120,10 @@
 (add-to-list 'load-path (concat modes-root "/s.git/"))
 (require 's)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; dash
+(add-to-list 'load-path (concat modes-root "/dash.git/"))
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; flycheck
 (add-to-list 'load-path (concat modes-root "/flycheck.git/"))
 (require 'flycheck)

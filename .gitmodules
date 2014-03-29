@@ -25,3 +25,6 @@
 [submodule "modes/s.git"]
 	path = modes/s.git
 	url = git@github.com:magnars/s.el.git
+[submodule "modes/dash.git"]
+	path = modes/dash.git
+	url = git@github.com:magnars/dash.el.git
