@@ -13,3 +13,6 @@
 [submodule "modes/auto-complete.git"]
 	path = modes/auto-complete.git
 	url = git@github.com:auto-complete/auto-complete.git
+[submodule "modes/autopair.git"]
+	path = modes/autopair.git
+	url = git@github.com:capitaomorte/autopair.git

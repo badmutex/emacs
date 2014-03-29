@@ -84,5 +84,9 @@
 (add-to-list 'load-path (concat modes-root "/auto-complete.git/"))
 (require 'auto-complete)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; auto-pair
+(add-to-list 'load-path (concat modes-root "/autopair.git/"))
+(require 'autopair)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)

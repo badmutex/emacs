@@ -57,3 +57,6 @@
 
 ;;;; package repos
 (require 'packages-setup)
+
+; autopair braces, quotes
+(autopair-global-mode)
