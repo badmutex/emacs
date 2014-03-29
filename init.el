@@ -64,3 +64,6 @@
 
 ; yasnippet mode
 (yas-global-mode 1)
+
+; flycheck
+(global-flycheck-mode)
