@@ -130,6 +130,9 @@
 (add-to-list 'load-path (concat modes-root "/flycheck.git/"))
 (require 'flycheck)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; deferred
+(add-to-list 'load-path (concat modes-root "/deferred.git/"))
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)
