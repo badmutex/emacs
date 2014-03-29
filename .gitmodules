@@ -10,3 +10,6 @@
 [submodule "modes/popup.git"]
 	path = modes/popup.git
 	url = git@github.com:auto-complete/popup-el.git
+[submodule "modes/auto-complete.git"]
+	path = modes/auto-complete.git
+	url = git@github.com:auto-complete/auto-complete.git

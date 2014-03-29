@@ -80,5 +80,9 @@
 (add-to-list 'load-path (concat modes-root "/popup.git/"))
 (require 'popup)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; auto-complete
+(add-to-list 'load-path (concat modes-root "/auto-complete.git/"))
+(require 'auto-complete)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)
