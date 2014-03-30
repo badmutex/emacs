@@ -151,6 +151,9 @@
 (add-to-list 'load-path (concat modes-root "/python-mode.el-6.1.3/"))
 (require 'python-mode)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Python IDE
+(add-to-list 'load-path (concat modes-root "/ide-python/"))
+(require 'ide-python)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)
