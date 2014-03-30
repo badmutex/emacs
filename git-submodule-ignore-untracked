@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+grep path .gitmodules | awk '{print $3}' | while read m; do
+      git config submodule.$m.ignore untracked
+done
