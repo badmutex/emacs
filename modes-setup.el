@@ -147,6 +147,10 @@
 (add-to-list 'load-path (concat modes-root "/jedi.git/"))
 (require 'jedi)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; python-mode
+(add-to-list 'load-path (concat modes-root "/python-mode.el-6.1.3/"))
+(require 'python-mode)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)
