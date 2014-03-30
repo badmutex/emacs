@@ -69,4 +69,4 @@
 (yas-global-mode 1)
 
 ; flycheck
-(global-flycheck-mode)
+(add-hook 'after-init-hook #'global-flycheck-mode)
