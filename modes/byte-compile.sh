@@ -22,6 +22,10 @@ emacs-byte-compile-files() {
 
 ################################################################################ compile
 
+byte-compile-haskell-mode.git() {
+    echo -n ''
+}
+
 byte-compile-auto-complete.git() {
     git submodule update --init
     make byte-compile
