@@ -23,7 +23,7 @@ emacs-byte-compile-files() {
 ################################################################################ compile
 
 byte-compile-haskell-mode.git() {
-    echo -n ''
+    make all
 }
 
 byte-compile-auto-complete.git() {
