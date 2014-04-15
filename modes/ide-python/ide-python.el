@@ -6,8 +6,8 @@
   (require 'auto-complete)
   (require 'autopair)
   (require 'yasnippet)
-  (require 'flycheck)
-  (global-flycheck-mode t)
+  ;; (require 'flycheck)
+  ;; (global-flycheck-mode t)
 
   (setq
    ac-auto-start 2
