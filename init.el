@@ -52,8 +52,8 @@
 (require 'modes-setup)
 
 ;;; centered cursor
-(when window-system
-  (global-centered-cursor-mode +1))
+;; (when window-system
+;;   (global-centered-cursor-mode +1))
 
 
 ;;;; package repos
