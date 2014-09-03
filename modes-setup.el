@@ -155,5 +155,10 @@
 (add-to-list 'load-path (concat modes-root "/ide-python/"))
 (require 'ide-python)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Python IDE
+(add-to-list 'load-path (concat modes-root "/rust-mode/"))
+(require 'rust-mode)
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)
