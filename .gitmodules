@@ -46,6 +46,3 @@
 [submodule "modes/python-environment.git"]
 	path = modes/python-environment.git
 	url = git@github.com:tkf/emacs-python-environment.git
-[submodule "modes/ipython-notebook.git"]
-	path = modes/ipython-notebook.git
-	url = git://github.com/tkf/emacs-ipython-notebook.git
