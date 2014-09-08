@@ -159,6 +159,10 @@
 (add-to-list 'load-path (concat modes-root "/rust-mode/"))
 (require 'rust-mode)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Go language mode
+(add-to-list 'load-path (concat modes-root "/go-mode/"))
+(require 'go-mode)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'modes-setup)
