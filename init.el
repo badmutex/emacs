@@ -61,9 +61,6 @@
 ;;;; package repos
 (require 'packages-setup)
 
-; magit
-(global-set-key "\C-xg" 'magit-status)
-
 ; autopair braces, quotes
 (autopair-global-mode)
 
