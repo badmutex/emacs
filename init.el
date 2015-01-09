@@ -47,7 +47,8 @@
 (put 'upcase-region 'disabled nil)
 
 ;;;; erc setup
-(require 'erc-setup)
+(when (file-exists-p (concat emacs-root "/erc-setup.el"))
+      (require 'erc-setup))
 
 ;;;; mode hooks
 (require 'modes-setup)
