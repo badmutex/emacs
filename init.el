@@ -46,6 +46,9 @@
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 
+;;;; setup for org-mode
+(require 'orgmode-setup)
+
 ;;;; erc setup
 (when (file-exists-p (concat emacs-root "/erc-setup.el"))
       (require 'erc-setup))
@@ -60,9 +63,6 @@
 
 ;;;; package repos
 (require 'packages-setup)
-
-; magit
-(global-set-key "\C-xg" 'magit-status)
 
 ; autopair braces, quotes
 (autopair-global-mode)

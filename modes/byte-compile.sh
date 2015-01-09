@@ -63,7 +63,10 @@ packages=*
 
 for name in $packages; do
     test -d $name || continue
+    # blacklist
+    test $name == magit.git && continue
     test $name == ide-python && continue
+
     printf "$bldred[ $name ]$txtrst\n" 1>&2
     pushd $name >/dev/null 2>&1
     compile=byte-compile-$name
