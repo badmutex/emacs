@@ -46,7 +46,8 @@
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 
-
+;;;; erc setup
+(require 'erc-setup)
 
 ;;;; mode hooks
 (require 'modes-setup)
