@@ -47,6 +47,8 @@
 (put 'upcase-region 'disabled nil)
 
 
+;;;; setup for org-mode
+(require 'orgmode-setup)
 
 ;;;; mode hooks
 (require 'modes-setup)
