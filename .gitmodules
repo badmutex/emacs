@@ -7,12 +7,14 @@
 [submodule "modes/popup.git"]
 	path = modes/popup.git
 	url = git@github.com:auto-complete/popup-el.git
+	ignore = dirty
 [submodule "modes/auto-complete.git"]
 	path = modes/auto-complete.git
 	url = git@github.com:auto-complete/auto-complete.git
 [submodule "modes/autopair.git"]
 	path = modes/autopair.git
 	url = git@github.com:capitaomorte/autopair.git
+        ignore = dirty
 [submodule "modes/yasnippet.git"]
 	path = modes/yasnippet.git
 	url = git@github.com:capitaomorte/yasnippet.git
@@ -22,24 +24,32 @@
 [submodule "modes/s.git"]
 	path = modes/s.git
 	url = git@github.com:magnars/s.el.git
+	ignore = dirty
 [submodule "modes/dash.git"]
 	path = modes/dash.git
 	url = git@github.com:magnars/dash.el.git
+	ignore = dirty
 [submodule "modes/f.git"]
 	path = modes/f.git
 	url = git@github.com:rejeep/f.el.git
+	ignore = dirty
 [submodule "modes/deferred.git"]
 	path = modes/deferred.git
 	url = git@github.com:kiwanami/emacs-deferred.git
+	ignore = dirty
 [submodule "modes/ctable.git"]
 	path = modes/ctable.git
 	url = git@github.com:kiwanami/emacs-ctable.git
+	ignore = dirty
 [submodule "modes/epc.git"]
 	path = modes/epc.git
 	url = git@github.com:kiwanami/emacs-epc.git
+	ignore = dirty
 [submodule "modes/jedi.git"]
 	path = modes/jedi.git
 	url = git@github.com:tkf/emacs-jedi.git
+	ignore = dirty
 [submodule "modes/python-environment.git"]
 	path = modes/python-environment.git
 	url = git@github.com:tkf/emacs-python-environment.git
+	ignore = dirty
