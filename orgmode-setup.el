@@ -41,8 +41,8 @@
       (mapcar (lambda (f) (concat org-directory f))
 	      my-org-files-short))
 
-;;;; startup showing content
-(setq org-startup-folded "content")
+;; ;;;; startup showing content
+;; (setq org-startup-folded "summary")
 
 ;;;; hide leading stars
 (setq org-hide-leading-stars t)
