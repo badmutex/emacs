@@ -44,6 +44,11 @@
 ;; ;;;; startup showing content
 ;; (setq org-startup-folded "summary")
 
+;;;; block changes to DONE that have incomplete children/dependencies
+;; http://orgmode.org/manual/TODO-dependencies.html
+(setq org-enforce-todo-dependencies t)
+(setq org-enforce-todo-checkbox-dependencies t)
+
 ;;;; hide leading stars
 (setq org-hide-leading-stars t)
 
