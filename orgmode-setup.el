@@ -56,19 +56,6 @@
  '(org-agenda-skip-scheduled-if-done t)
  )
 
-
-;; get timeline from all files
-(define-key global-map (kbd "C-c t")
-  (lambda  (&optional arg)
-    (interactive "P")
-    (with-temp-buffer
-      (dolist (org-agenda-file org-agenda-files)
-	(insert-file-contents org-agenda-file nil)
-	(end-of-buffer)
-	(newline))
-      (write-file "/tmp/timeline.org")
-      (org-agenda arg "L"))))
-
 ;;;; capture notes to this file
 (setq org-default-notes-file (concat org-directory "refile.org"))
 
