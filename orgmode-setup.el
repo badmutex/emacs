@@ -31,6 +31,7 @@
 	 "STARTED(s!)"
 	 "BLOCKED(b@/!)"
 	 "WAITING(w@/!)"
+	 "|"
 	 "DONE(d!)"
 	 "CANCELED(c@/!)"
 	 )))
