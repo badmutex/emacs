@@ -24,7 +24,8 @@
 			  "Research.org"
 			  ))
 
-;;;; keywords. @, ! are add note, timestamp
+;;;; TODO
+;; keywords. @, ! are add note, timestamp
 (setq org-todo-keywords
       '((sequence
 	 "TODO(t)"
@@ -35,6 +36,21 @@
 	 "DONE(d!)"
 	 "CANCELED(c@/!)"
 	 )))
+
+;;; breaking down subtasks
+;;; http://orgmode.org/manual/Breaking-down-tasks.html
+
+;; provide statistics
+(setq org-provide-todo-statistics t)
+(setq org-hierarchical-todo-statistics nil)
+
+;; automatically change entry to DONE when all its children are done
+(defun org-summary-todo (n-done n-not-done)
+  "Switch entry to DONE when all subentries are done, to TODO otherwise."
+  (let (org-log-done org-log-states)   ; turn off logging
+    (org-todo (if (= n-not-done 0) "DONE" "TODO"))))
+(add-hook 'org-after-todo-statistics-hook 'org-summary-todo)
+
 
 ;; provide full path to my org files
 (setq my-org-files
@@ -55,6 +71,7 @@
 ;;;; the org agenda
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-agenda-files my-org-files)
+(setq org-agenda-todo-list-sublevels t)
 
 (custom-set-variables
  '(org-agenda-skip-deadline-if-done t)
@@ -72,6 +89,18 @@
 
 ;;;; start the week on Saturdays
 (setq org-agenda-start-on-weekday 6)
+
+;;;; setup priorities
+;; Scheme:
+;;   - A: tasks I MUST do
+;;   - B: tasks I SHOULD do
+;;   - C: tasks I MAY do
+;;   - D: tasks I DELEGATE
+;;   - E: tasks I eleminate
+(setq org-highest-priority ?A)
+(setq org-lowest-priority ?E)
+(setq org-default-priority ?B)
+(setq org-use-priority-inheritance '("PRIORITY"))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
