@@ -53,3 +53,6 @@
 	path = modes/python-environment.git
 	url = git@github.com:tkf/emacs-python-environment.git
 	ignore = dirty
+[submodule "themes/zenburn.git"]
+	path = themes/zenburn.git
+	url = git@github.com:bbatsov/zenburn-emacs.git

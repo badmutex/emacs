@@ -9,6 +9,7 @@
 
 ;;;; assume themse are installed vial elpa/marmalade
 ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/zenburn-theme-2.1/")
+(require 'themes-setup)
 (load-theme 'misterioso t)
 
 ;;;; remove menu- and tool-bars if needed
