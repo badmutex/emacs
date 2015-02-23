@@ -22,6 +22,7 @@
 			  "Jobsearch.org"
 			  "Projects.org"
 			  "Research.org"
+			  "Work.org"
 			  ))
 
 ;;;; TODO
